@@ -3604,6 +3604,10 @@
                 {
                     "container": "/movies",
                     "bind": "/nfs/mattwhi/videos"
+                },
+                {
+                    "container": "/media/music",
+                    "bind": "/nfs/mattwhi/music"
                 }
                 ],
                 "env": [
