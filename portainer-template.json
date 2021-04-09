@@ -3620,17 +3620,17 @@
                 {
                     "name": "VERSION",
                     "label": "VERSION",
-                    "set": "latest"
+                    "default": "latest"
                 },
                 {
                     "name": "TZ",
                     "label": "TZ",
-                    "set": "Europe/London"
+                    "default": "Europe/London"
                 },
                 {
                     "name": "ADVERTISE_IP",
                     "label": "ADVERTISE_IP",
-                    "set": "http://192.168.1.112:32400/"
+                    "default": "http://192.168.1.112:32400/"
                 }
                 ]
             },
