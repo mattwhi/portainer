@@ -3603,10 +3603,6 @@
                 "volumes": [
                     {
                         "container": "/movies",
-                        "bind": "/nfs/mattwhi/videos"
-                    },
-                    {
-                        "container": "/media",
                         "bind": "/nfs/mattwhi"
                     }
                 ],
