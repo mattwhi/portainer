@@ -3604,6 +3604,10 @@
                     {
                         "container": "/movies",
                         "bind": "/nfs/mattwhi"
+                    },
+                    {
+                        "container": "/media",
+                        "bind": "/data2/pictures"
                     }
                 ],
                 "env": [
