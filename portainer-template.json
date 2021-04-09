@@ -3601,14 +3601,14 @@
                     "32414:32414/udp"
                 ],
                 "volumes": [
-                {
-                    "container": "/movies",
-                    "bind": "/nfs/mattwhi/videos"
-                },
-                {
-                    "container": "/media/music",
-                    "bind": "/nfs/mattwhi/music"
-                }
+                    {
+                        "container": "/movies",
+                        "bind": "/nfs/mattwhi/videos"
+                    },
+                    {
+                        "container": "/media",
+                        "bind": "/nfs/mattwhi"
+                    }
                 ],
                 "env": [
                 {
