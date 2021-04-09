@@ -4853,7 +4853,59 @@
                     "default": "100"
                 }
             ]
-        }
+        },
+        {
+            "type": 1,
+            "title": "Zoneminder",
+            "name": "Zoneminder",
+            "description": "CCTV Software",
+            "logo": "https://zoneminder.com/images/SVGs/Home_Security.svg",
+            "image": "dlandon/zoneminder:latest",
+            "categories": [
+            "CCTV"
+            ],
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "network": "host",
+            "privileged": false,
+            "ports": [
+                "8443:443/tcp",
+                "9001:9000/tcp",
+                "8181:80/tcp"
+            ],
+            "volumes": [
+            {
+                "container": "/var/cache/zoneminder:rw",
+                "bind": "/media/Zoneminder/data"
+            },
+            {
+                "container": "/config:rw",
+                "bind": "/media/Zoneminder"
+            }
+            ],
+            "env": [
+            {
+                "name": "PUID",
+                "label": "PUID",
+                "default": "99"
+            },
+            {
+                "name": "PGID",
+                "label": "PGID",
+                "default": "100"
+            },
+            {
+                "name": "MULTI_PORT_START",
+                "label": "MULTI_PORT_START",
+                "default": "0"
+            },
+            {
+                "name": "MULTI_PORT_END",
+                "label": "MULTI_PORT_END",
+                "default": "0"
+            }
+        ]
+    }
     ]
 }
 
