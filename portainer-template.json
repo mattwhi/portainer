@@ -4873,6 +4873,38 @@
         },
         {
             "type": 1,
+            "title": "Pi-Hole",
+            "name": "pihole",
+            "description": "A Linux network-level advertisement and Internet tracker blocking application which acts as a DNS sinkhole.",
+            "logo": "https://raw.githubusercontent.com/Qballjos/portainer_templates/master/Images/pihole.png",
+            "image": "pihole/pihole:latest",
+            "categories": [
+              "Other",
+              "Tools"
+            ],
+            "platform": "linux",
+            "restart_policy": "unless-stopped",
+            "ports": [
+              "53:53/tcp",
+              "53:53/udp",
+              "67:67/udp",
+              "1010:80/tcp",
+              "4443:443/tcp"
+            ],
+            "volumes": [
+              {
+                "container": "/etc/pihole",
+                "bind": "/portainer/Files/AppData/Config/PiHole"
+              },
+              {
+                "container": "/etc/dnsmasq.d",
+                "bind": "/portainer/Files/AppData/Config/PiHole/DNS"
+              }
+            ],
+            "note": "When the installation is complete, navigate to your.ip.goes.here:1010/admin. Follow the article <a href='https://medium.com/@niktrix/getting-rid-of-systemd-resolved-consuming-port-53-605f0234f32f'>here</a> if you run into issues binding to port 53."
+          },
+        {
+            "type": 1,
             "title": "Zoneminder",
             "name": "Zoneminder",
             "description": "CCTV Software",
