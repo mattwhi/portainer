@@ -4926,11 +4926,15 @@
             "volumes": [
             {
                 "container": "/var/cache/zoneminder:rw",
-                "bind": "/media/Zoneminder/data"
+                "bind": "/nfs/nfs/zm/data"
             },
             {
                 "container": "/config:rw",
-                "bind": "/media/Zoneminder"
+                "bind": "/nfs/nfs/zm/data"
+            },
+            {
+                "container": "/dev/shm",
+                "bind": "/shm"
             }
             ],
             "env": [
