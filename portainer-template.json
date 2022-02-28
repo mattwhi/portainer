@@ -4917,7 +4917,7 @@
             "restart_policy": "unless-stopped",
             "network": "host",
             "privileged": false,
-            "shm_size": "4GB",
+            "shm-size": "4GB",
             "ports": [
                 "8443:443/tcp",
                 "9001:9000/tcp",
