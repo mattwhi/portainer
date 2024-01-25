@@ -4915,7 +4915,7 @@
             ],
             "platform": "linux",
             "restart_policy": "unless-stopped",
-            "network": "host",
+            "network": "bridge",
             "privileged": false,
             "shm-size": "4GB",
             "ports": [
