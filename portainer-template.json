@@ -4931,7 +4931,11 @@
             {
                 "container": "/config:rw",
                 "bind": "/media/zm/zm/"
-            }
+            },
+	    {
+                "container": "/dev/shm",
+                "bind": "/media/zm/shm"
+	    }
             ],
             "env": [
             {
